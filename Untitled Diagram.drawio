@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-25T10:27:15.833Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="hk4XPVd3_BeCVh11YKkN" version="14.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-25T10:30:12.025Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="0s5sv5uXI2ahXEI-9aSh" version="14.7.0" type="github">
   <diagram id="7lykp9iamNYmA4Tu66E8" name="第 1 页">
     <mxGraphModel dx="2253" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -16,7 +16,7 @@
         <mxCell id="zZ6jMW011a1lbR9ZiVev-26" value="- components(组件)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zZ6jMW011a1lbR9ZiVev-6">
           <mxGeometry y="60" width="270" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="zZ6jMW011a1lbR9ZiVev-52" value="- SPosMarkerCom(站点+路线)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zZ6jMW011a1lbR9ZiVev-6">
+        <mxCell id="zZ6jMW011a1lbR9ZiVev-52" value="- STakeCarPlaceCom(站点+路线)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zZ6jMW011a1lbR9ZiVev-6">
           <mxGeometry y="86" width="270" height="26" as="geometry" />
         </mxCell>
         <mxCell id="zZ6jMW011a1lbR9ZiVev-28" value="- ......" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zZ6jMW011a1lbR9ZiVev-6">
@@ -104,17 +104,14 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zZ6jMW011a1lbR9ZiVev-53" value="SPosMarkerCom(站点组件)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d80073;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#A50040;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="290" y="880" width="300" height="104" as="geometry" />
+        <mxCell id="zZ6jMW011a1lbR9ZiVev-53" value="STakeCarPlaceCom(上车点组件)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d80073;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#A50040;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="290" y="880" width="300" height="78" as="geometry" />
         </mxCell>
-        <mxCell id="zZ6jMW011a1lbR9ZiVev-54" value="- 气泡" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zZ6jMW011a1lbR9ZiVev-53">
+        <mxCell id="zZ6jMW011a1lbR9ZiVev-54" value="- 上车点、大头针" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zZ6jMW011a1lbR9ZiVev-53">
           <mxGeometry y="26" width="300" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="zZ6jMW011a1lbR9ZiVev-55" value="- 绘制路线" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zZ6jMW011a1lbR9ZiVev-53">
+        <mxCell id="zZ6jMW011a1lbR9ZiVev-55" value="-drawNavigationLine（绘制路线）" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zZ6jMW011a1lbR9ZiVev-53">
           <mxGeometry y="52" width="300" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="zZ6jMW011a1lbR9ZiVev-56" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zZ6jMW011a1lbR9ZiVev-53">
-          <mxGeometry y="78" width="300" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
